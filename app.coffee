@@ -29,12 +29,13 @@ module.exports =
     collections(folder: 'posts', layout: 'post'),
     collections(folder: 'page', layout: 'post'),
     roots_rss_generator(
-      folder: "posts"
-      output: "./public/feed.xml"
+      folder: "page"
+      output: "feed.xml"
       maxcount: 5
       settings:
         title: "New title"
         feed_url: "http://mysite.com/feed.xml"
+        site_url: "http://mytestsite.sites.webriqs.com"
         description: "This is new description"
     ),
     js_pipeline(files: 'assets/js/*.coffee'),
